@@ -1,0 +1,230 @@
+•⁠ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px; /* Distance du bas de la page */
+    right: 20px;  /* Distance du bord droit */
+    background-color: #007BFF; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 50%; /* Cercle */
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+    display: none; /* Masqué par défaut */
+    z-index: 1000; /* Toujours au-dessus */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3; /* Couleur au survol */
+    transform: scale(1.1); /* Effet zoom au survol */
+}
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        z-index: 1000; 
+      
+  }
+  
+
+  
+  header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+  }
+  
+  header nav ul {
+    
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+    
+  }
+  
+header nav ul li a {
+    color: white;
+    font-size: 19px;
+    font-family: 'Courier New', monospace;
+}
+  
+header .hamburger-menu {
+    display: none;
+  }
+  
+  
+  @media (max-width: 768px) {
+    header nav ul {
+      display: none;  
+      flex-direction: column;  
+    }
+  
+    header .hamburger-menu {
+      display: block; 
+    
+    }
+  
+    header nav ul.active {
+      display: flex;  
+    }
+}
+  header .hamburger-menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  .hero {
+    height: 90vh;
+    background: url('./image2.jpeg') center/cover no-repeat;
+  
+    
+    text-align: center;
+    color: #333;
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero p {
+    margin-top: 9vh;
+    font-size: 40px;
+  }
+  
+.hero .cta-btn {
+    padding: 15px 30px;
+    border : 1px solid black;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20vh auto;
+}
+  
+.services {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.services .description {
+    height: 12vh;
+    width: 50%;
+    margin: 1vh auto;
+    text-align: center;
+}
+  
+  .services .service-item {
+    height: 25vh;
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1%;
+    padding: 30px 0;
+    border : 1px solid black;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .projects {
+    background-color: #fff;
+    text-align: center;
+  }
+ .projects .project-item img{
+    border-radius: 8%;
+  }
+  
+  .projects .project-item {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2%;
+    
+  }
+  
+  .about {
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .about .profile-img {
+  
+    width: 150px;
+    margin: 20px 0;
+  }
+  .about .description {
+    height: 12vh;
+    width: 50%;
+    margin: 1vh auto;
+    text-align: center;
+}
+  
+  .contact {
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact .contact-item {
+    margin: 10px 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social-icons a {
+    margin: 2rem 10px;
+    color: white;
+  }
+ 
+  
+  
+  
